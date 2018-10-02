@@ -15,3 +15,7 @@ person.name = 'John';
 
 // Bracket notation
 person['name'] = 'Mary';
+
+// Adding an array
+let myArray = ["red", "blue"];
+console.log(myArray);
