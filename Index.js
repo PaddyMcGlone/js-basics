@@ -18,4 +18,5 @@ person['name'] = 'Mary';
 
 // Adding an array
 let myArray = ["red", "blue"];
+myArray[2] = 'green';
 console.log(myArray);
