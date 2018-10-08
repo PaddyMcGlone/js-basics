@@ -34,3 +34,9 @@ function greetPerson(name) {
 }
 
 greetPerson('Jonthan');
+
+function greetFullName(firstName, lastname){
+    console.log('Hello '+firstName+' '+lastname)
+}
+
+greetFullName('Patrick', 'McGlone');
