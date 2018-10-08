@@ -5,7 +5,7 @@ let firstName = undefined;
 let favouriteColour = null;
 
 let person = {
-    name : Paddy,
+    name : 'Paddy',
     age : 30,
     isApproved : true
 };
@@ -20,3 +20,17 @@ person['name'] = 'Mary';
 let myArray = ["red", "blue"];
 myArray[2] = 'green';
 console.log(myArray);
+
+// Adding a simple funciton
+
+function greet() {
+    console.log('Hello world')
+}
+
+greet();
+
+function greetPerson(name) {
+    console.log('Hello: ' + name )
+}
+
+greetPerson('Jonthan');
