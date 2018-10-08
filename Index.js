@@ -40,3 +40,10 @@ function greetFullName(firstName, lastname){
 }
 
 greetFullName('Patrick', 'McGlone');
+
+function square(number) {
+    return number * number;
+}
+
+var result = square(2);
+console.log('Output from result is: ' + result);
