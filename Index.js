@@ -56,3 +56,9 @@ console.log(++x);
 let y = 5;
 console.log(x++);
 console.log(y);
+
+
+let value = 1;
+
+console.log(value === 1);
+console.log(value != 1);
