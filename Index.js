@@ -62,3 +62,9 @@ let value = 1;
 
 console.log(value === 1);
 console.log(value != 1);
+
+
+// using Ternary operators
+let value = 100;
+let customerType = value > 100 ? 'Gold standard' : 'Silver standard';
+console.log(customerType);
