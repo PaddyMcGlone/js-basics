@@ -47,3 +47,12 @@ function square(number) {
 
 var result = square(2);
 console.log('Output from result is: ' + result);
+
+// Increment and Decrement operators
+
+let x = 2;
+console.log(++x);
+
+let y = 5;
+console.log(x++);
+console.log(y);
