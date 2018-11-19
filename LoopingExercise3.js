@@ -1,21 +1,18 @@
-const output = FizzBuzz(15)
+const output = FizzBuzz("true")
 console.log(output);
 
 function FizzBuzz(input) {
+    if(isNaN(input))
+         return "Not a number";
 
-    // if(input !== 1)
-    //     return "Not a number";
-
-    switch (input){
-        case isFizz(input) && isBuzz(input):
-            return 'FizzBuzz';
-        case isFizz(input):
-            return 'Fizz';
-        case isBuzz(input):
-            return 'Buzz';
-        default:
-            return input;
-    }
+    if(isFizz(input) && isBuzz(input))
+        return "FizzBuzz";
+    else if(isFizz(input))
+        return 'Fizz';
+    else if(isBuzz(input))
+        return 'Buzz';
+    else
+        return input;``
 }
 
 // Is divisible by 3
