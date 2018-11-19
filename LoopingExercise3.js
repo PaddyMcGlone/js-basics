@@ -3,7 +3,7 @@ console.log(output);
 
 function FizzBuzz(input) {
     if(isNaN(input))
-         return "Not a number";
+         return NaN;
 
     if(isFizz(input) && isBuzz(input))
         return "FizzBuzz";
