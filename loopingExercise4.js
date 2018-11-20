@@ -1,15 +1,13 @@
-console.log(CheckSpeed(130));
+console.log(CheckSpeed(120));
 
 // CheckSpeed program
-function CheckSpeed(input){
+function CheckSpeed(CurrentSpeed){
     const Speedlimit = 70
 
-    if(input <= speedlimit)
+    if(CurrentSpeed <= Speedlimit)
         return 'Ok';
 
-    let points = 0;    
-    let total = input - speedlimit;
-    points = Math.floor(total / 5);
+    let points = Math.floor((CurrentSpeed - Speedlimit) / 5);
 
     if(points >= 12)
         return 'Licence suspended';
