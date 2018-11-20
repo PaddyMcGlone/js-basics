@@ -2,11 +2,13 @@ console.log(CheckSpeed(130));
 
 // CheckSpeed program
 function CheckSpeed(input){
-    if(input <= 70)
+    const Speedlimit = 70
+
+    if(input <= speedlimit)
         return 'Ok';
 
     let points = 0;    
-    let total = input - 70;
+    let total = input - speedlimit;
     points = Math.floor(total / 5);
 
     if(points >= 12)
