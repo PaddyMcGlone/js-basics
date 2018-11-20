@@ -7,7 +7,7 @@ function CheckSpeed(CurrentSpeed){
     if(CurrentSpeed <= Speedlimit)
         return 'Ok';
 
-    let points = Math.floor((CurrentSpeed - Speedlimit) / 5);
+    const points = Math.floor((CurrentSpeed - Speedlimit) / 5);
 
     if(points >= 12)
         return 'Licence suspended';
