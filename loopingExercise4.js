@@ -1,9 +1,9 @@
-console.log(CheckSpeed(180));
+console.log(CheckSpeed(130));
 
 // CheckSpeed program
 function CheckSpeed(input){
     if(input <= 70)
-        return 'ok';
+        return 'Ok';
 
     let points = 0;    
     let total = input - 70;
