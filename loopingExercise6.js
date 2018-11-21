@@ -5,7 +5,10 @@ console.log(countThruthyValues(values));
 function countThruthyValues(values) {
     let total = 0;
     for(let value of values){         
-        if(value != '' ) total++;
+        if(value){
+            console.log(value, "Thruthy");
+            total++;
+        } 
     }
     console.log(total);
 }
