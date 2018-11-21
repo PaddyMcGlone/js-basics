@@ -7,11 +7,8 @@ const person = {
 
 ShowStringProperties(person);
 
-function ShowStringProperties(object){
-    let total = 0;
-    for(let key in object){
+function ShowStringProperties(object){ 
+    for(let key in object)
         if(typeof object[key] === "string")
-            total++;
-    }
-    console.log(total);
+            console.log(object[key], "is a string");
 }
