@@ -12,3 +12,14 @@ function sum(limit){
 
     console.log("Multiplier total: ", total);
 }
+
+
+// Mosh example
+function Moshsum(){
+    let sum = 0;
+
+    for(i = 0; i <= limit; i++){
+        if(i % 3 == 0 || i % 5 == 0)
+            sum += i;
+    }
+}
