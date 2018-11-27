@@ -10,21 +10,19 @@ function CalculateGrades(marks){
 
     let average = total / marks.length;
 
-    switch (average) {
-        case (average <= 59):
-            console.log(average, "F");
-            break;
-        case (average >= 60) && (average <= 69):
-            console.log(average, "D");
-            break;
-        case (average >= 70) && (average <= 79):
-            console.log(average, "C");
-            break;
-        case (average >= 80) && (average <= 89):
-            console.log(average, "B");
-            break;
-        default:
-            console.log(average, "A")
-            break;
-    }
+    if(average >= 50 && average <= 59)
+        console.log(average, "F")
+
+    if(average >= 60 && average <= 69)
+        console.log(average, "D")
+    
+    if(average >= 70 && average <= 79)
+        console.log(average, "C")
+
+    if(average >= 80 && average <= 89)
+        console.log(average, "B")
+
+    if(average >= 90)
+        console.log(average, "A")
+    
 }
