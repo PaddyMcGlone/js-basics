@@ -17,5 +17,17 @@ const circle2 = {
         placeholder : 10,
         image : true
     },
-    display : false
+    display : false,
+    draw : function(){
+        console.log('Draw')
+    }
+}
+
+// As the code displays above, a function is
+// just another item within the key value pair.
+
+
+// A standard function.
+function Draw(){
+    console.log('Draw')
 }
