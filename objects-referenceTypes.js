@@ -17,5 +17,26 @@ const circle = {
 }
 
 for(let key in circle){
+    console.log(key, circle[key]);
+}
+
+for(let key of Object.keys(circle)){
     console.log(key);
 }
+
+if('radius' in circle) console.log('Yes'); 
+
+
+// Copying a value from the source to a destination object.
+
+const another = {};
+
+for(let key in circle){
+    another[key] = circle[key];
+}
+
+for(let akey in another){
+    console.log(akey);
+}
+
+const another2 = Object.assign({}, circle);
