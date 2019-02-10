@@ -20,7 +20,8 @@ function CountOccurences(array, serachItem){
 
 // 2. Advanced reduce method.
 function CountOccurencesWithReduce(array, serachItem){
-    return sum = array.reduce((serachItem, currentValue) => {
-        if(serachItem === currentValue) sum += 1;
-    }, 0);
+     let total = array.reduce((total, currentValue) => {
+        total += currentValue === serachItem ? 1 : 0;
+     });
+     return total;
 }
