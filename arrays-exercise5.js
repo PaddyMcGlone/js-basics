@@ -6,6 +6,9 @@ console.log("Total count : ", results);
 let reduceResults = CountOccurencesWithReduce(numbers, 2);
 console.log("With reduce : ", reduceResults);
 
+let moshExample = MoshHelperReduceMethod(numbers, 1);
+console.log("Mosh example code: ", moshExample);
+
 // 1. Simple approach.
 function CountOccurences(array, serachItem){
     let total = 0;
@@ -25,4 +28,12 @@ function CountOccurencesWithReduce(array, serachItem) {
      }, 0);
 
      return sum;
+}
+
+function MoshHelperReduceMethod(array, searchItem) {
+    return array.reduce((accumulator, currentValue) => {
+        let occurance = (currentValue === searchItem) ? 1 : 0;        
+        console.log(searchItem, currentValue, accumulator);
+        return accumulator += occurance;
+    }, 0);
 }
