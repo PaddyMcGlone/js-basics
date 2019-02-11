@@ -20,7 +20,7 @@ console.log("Reduce methods turn : ", otherMax);
 
 // Reduce method approach
 function GetMaxWithReduce(array){
-    return array.reduce((accumulator, currentValue) => {        
-        return accumulator < currentValue ? currentValue : accumulator;
+    return array.reduce((a, b) => {        
+        return a > b ? a : b;
     },0);
 }
