@@ -20,3 +20,30 @@ function movieFilter(movies){
     for (const movie of results) 
         console.log(movie.title);    
 }
+
+// Mosh solution
+console.log("Moshs solution")
+let titles = movies
+    .filter(m => m.year == 2018 && m.rating >= 4)
+    .sort(function(a,b) {
+        if(a < b) return -1;
+        if(a > b) return 1;
+        return 0;
+    })
+    .reverse()
+    .map(m => m.title)
+
+console.log(titles);
+
+// Repeat to learn
+let movieTitles = movies
+    .filter (m => m.year >= 2018 && m.rating >= 4)
+    .sort (function(a,b){
+        if (a>b) return 1;
+        if (a<b) return -1;
+        return 0;
+    })
+    .reverse()
+    .map(m => m.title)
+
+console.log(movieTitles);
